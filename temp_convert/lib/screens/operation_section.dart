@@ -17,7 +17,6 @@ class OperationSection extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        // Input field
         Expanded(
           child: TextField(
             controller: inputController,
@@ -34,7 +33,6 @@ class OperationSection extends StatelessWidget {
                 borderRadius: BorderRadius.zero,
                 borderSide: BorderSide(color: Colors.grey.shade300),
               ),
-              prefixIcon: const Icon(Icons.thermostat_outlined),
               contentPadding: const EdgeInsets.symmetric(
                 horizontal: 16,
                 vertical: 16,
@@ -46,7 +44,6 @@ class OperationSection extends StatelessWidget {
           ),
         ),
 
-        // Equals sign with animation
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: AnimatedSwitcher(
